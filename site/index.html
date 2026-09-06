@@ -13,7 +13,7 @@
   <title>Empty country, dense country?</title>
   <link rel="stylesheet" href="styles.css?v=20260906c">
   <script src="data.js?v=20260906c"></script>
-  <script src="app.js?v=20260906g" defer></script>
+  <script src="app.js?v=20260906h" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#article" data-i18n="skip">Skip to article</a>
@@ -30,7 +30,7 @@
       <p class="eyebrow reveal" data-i18n="heroEyebrow">Thirty countries · one grid</p>
       <h1 class="reveal" data-i18n-html="heroTitle">Empty country,<br><em>dense</em> country?</h1>
       <p class="dek reveal" data-i18n="heroDek">Spain is sparsely populated. But that does not mean Spaniards live at low density.</p>
-      <div class="hero-fact reveal"><span data-i18n="heroFactLabel">Spain’s average density</span><strong id="hero-density">—</strong><small data-i18n="peopleKm">people / km²</small></div>
+      <div class="hero-fact reveal"><span data-i18n="heroFactLabel">Spain’s population density</span><strong id="hero-density">—</strong><small data-i18n="peopleKm">people / km²</small></div>
     </section>
 
     <section class="chapter" id="average">
@@ -141,7 +141,10 @@
           <source type="image/webp" srcset="assets/spain-density-960.webp 960w, assets/spain-density-1600.webp 1600w, assets/spain-density-2400.webp 2400w">
           <img src="assets/spain-density-1600.png" srcset="assets/spain-density-960.png 960w, assets/spain-density-1600.png 1600w, assets/spain-density-2400.png 2400w" sizes="100vw" width="1600" height="1120" loading="lazy" alt="One-kilometre population grid of Spain, including a Canary Islands inset, showing dense cells around Madrid, Barcelona, Valencia, the north coast, Galicia and Andalusia and sparse cells across much of the interior.">
         </picture>
-        <div class="map-legend compact"><strong data-i18n="legendTitle">Population per 1-km cell</strong><span><i style="--c:#ddd8cc"></i>0</span><span><i style="--c:#a9bea7"></i>10–99</span><span><i style="--c:#315f55"></i><b data-i18n="legend1000">1,000–4,999</b></span><span><i style="--c:#ef5b49"></i><b data-i18n="legend5000">5,000+</b></span></div>
+        <div class="map-legend" aria-label="Map legend">
+          <strong data-i18n="legendTitle">Population per 1-km cell</strong>
+          <span><i style="--c:#ddd8cc"></i>0</span><span><i style="--c:#d4dbc5"></i>1–9</span><span><i style="--c:#a9bea7"></i>10–99</span><span><i style="--c:#729786"></i>100–999</span><span><i style="--c:#315f55"></i><b data-i18n="legend1000">1,000–4,999</b></span><span><i style="--c:#ef5b49"></i><b data-i18n="legend5000">5,000+</b></span>
+        </div>
         <figcaption data-i18n="s7Caption">Each colour represents the published usual-resident population in a nominal 1 km square.</figcaption>
       </figure>
     </section>

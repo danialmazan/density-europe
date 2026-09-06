@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-06T18:17:09+0200",
-  "passed": 25,
-  "total": 25,
+  "generated": "2026-09-06T22:16:21+0200",
+  "passed": 26,
+  "total": 26,
   "success": true,
   "checks": [
     {
@@ -93,6 +93,11 @@
       "name": "map legend labels",
       "passed": true,
       "detail": "both map legends identify the measurement"
+    },
+    {
+      "name": "map legend buckets",
+      "passed": true,
+      "detail": "both maps show all six population buckets"
     },
     {
       "name": "portfolio return link",

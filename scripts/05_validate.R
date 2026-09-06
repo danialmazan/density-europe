@@ -59,6 +59,8 @@ record("canonical URL", xml_attr(xml_find_first(doc, "//link[@rel='canonical']")
 record("image alternatives", all(nzchar(xml_attr(xml_find_all(doc, "//main//img"), "alt"))), "all story images have alt text")
 record("language controls", length(xml_find_all(doc, "//*[@data-lang='en' or @data-lang='es']")) == 2L, "EN/ES controls present")
 record("map legend labels", length(xml_find_all(doc, "//*[@data-i18n='legendTitle']")) == 2L, "both map legends identify the measurement")
+legend_nodes <- xml_find_all(doc, "//*[contains(concat(' ', normalize-space(@class), ' '), ' map-legend ')]")
+record("map legend buckets", length(legend_nodes) == 2L && all(vapply(legend_nodes, function(node) length(xml_find_all(node, "./span")) == 6L, logical(1))), "both maps show all six population buckets")
 record("portfolio return link", xml_attr(xml_find_first(doc, "//footer//a[contains(@class,'footer-home')]"), "href") == "https://danielalmazan.com/", "footer links to danielalmazan.com")
 
 js <- readLines(file.path(site, "app.js"), warn = FALSE)
