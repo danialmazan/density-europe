@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Spain looks sparsely populated, but a harmonised European grid reveals how tightly its residents are concentrated.">
+  <meta property="og:title" content="Empty country, dense country?">
+  <meta property="og:description" content="A grid-based comparison of population concentration across 30 European countries, with Spain as the case study.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://danielalmazan.com/density-europe/">
+  <meta property="og:image" content="https://danielalmazan.com/density-europe/assets/europe-density-1600.png">
+  <link rel="canonical" href="https://danielalmazan.com/density-europe/">
+  <title>Empty country, dense country?</title>
+  <link rel="stylesheet" href="styles.css?v=20260906c">
+  <script src="data.js?v=20260906c"></script>
+  <script src="app.js?v=20260906g" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#article" data-i18n="skip">Skip to article</a>
+  <header class="masthead">
+    <a href="https://danielalmazan.com/" class="home-link" aria-label="Daniel Almazán home">Daniel Almazán</a>
+    <p data-i18n="meta">Population · Europe · 2021</p>
+    <div class="language-switch" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button><span aria-hidden="true">/</span><button type="button" data-lang="es" aria-pressed="false">ES</button>
+    </div>
+  </header>
+
+  <main id="article">
+    <section class="hero">
+      <p class="eyebrow reveal" data-i18n="heroEyebrow">Thirty countries · one grid</p>
+      <h1 class="reveal" data-i18n-html="heroTitle">Empty country,<br><em>dense</em> country?</h1>
+      <p class="dek reveal" data-i18n="heroDek">Spain is sparsely populated. But that does not mean Spaniards live at low density.</p>
+      <div class="hero-fact reveal"><span data-i18n="heroFactLabel">Spain’s average density</span><strong id="hero-density">—</strong><small data-i18n="peopleKm">people / km²</small></div>
+    </section>
+
+    <section class="chapter" id="average">
+      <div class="chapter-number">01</div>
+      <div class="chapter-copy reveal">
+        <p class="eyebrow" data-i18n="s1Eyebrow">The familiar number</p>
+        <h2 data-i18n="s1Title">Spain looks sparse.</h2>
+        <p data-i18n="s1Body">Divide the census population by the country’s land surface and Spain sits in the lower half of this 30-country comparison. The calculation is correct, but it gives every square kilometre equal weight.</p>
+      </div>
+      <figure class="chart-figure reveal">
+        <div class="figure-kicker" data-i18n="s1Kicker">Conventional density · people per km²</div>
+        <div id="density-ranking" class="ranking-chart" role="img"></div>
+      </figure>
+    </section>
+
+    <section class="map-chapter dark-section" id="grid">
+      <div class="map-copy reveal">
+        <p class="chapter-number">02</p>
+        <p class="eyebrow" data-i18n="s2Eyebrow">Population on a grid</p>
+        <h2 data-i18n="s2Title">From an average to a pattern.</h2>
+        <p data-i18n="s2Body">The harmonised census grid places the population into the same one-kilometre squares. Spatial patterns emerge.</p>
+      </div>
+      <figure class="map-figure reveal">
+        <picture>
+          <source type="image/webp" srcset="assets/europe-density-960.webp 960w, assets/europe-density-1600.webp 1600w, assets/europe-density-2400.webp 2400w">
+          <img src="assets/europe-density-1600.png" srcset="assets/europe-density-960.png 960w, assets/europe-density-1600.png 1600w, assets/europe-density-2400.png 2400w" sizes="100vw" width="1600" height="1104" loading="lazy" alt="Population in one-kilometre grid squares across the 30 countries in the Eurostat dataset, with the densest cells concentrated around major cities and urban corridors.">
+        </picture>
+        <div class="map-legend" aria-label="Map legend">
+          <strong data-i18n="legendTitle">Population per 1-km cell</strong>
+          <span><i style="--c:#ddd8cc"></i>0</span><span><i style="--c:#d4dbc5"></i>1–9</span><span><i style="--c:#a9bea7"></i>10–99</span><span><i style="--c:#729786"></i>100–999</span><span><i style="--c:#315f55"></i><b data-i18n="legend1000">1,000–4,999</b></span><span><i style="--c:#ef5b49"></i><b data-i18n="legend5000">5,000+</b></span>
+        </div>
+        <figcaption data-i18n="s2Caption">The map covers the EU-27, Norway, Switzerland and Liechtenstein. It does not represent every European country.</figcaption>
+      </figure>
+    </section>
+
+    <section class="chapter occupied-section" id="occupied">
+      <div class="chapter-number">03</div>
+      <div class="chapter-copy reveal">
+        <p class="eyebrow" data-i18n="s3Eyebrow">Populated territory</p>
+        <h2 data-i18n-html="s3Title">People appear in just <span id="occupied-copy">—</span> of Spain’s land.</h2>
+        <p data-i18n-html="s3Body">Only Norway and Bulgaria have less populated land than Spain. Most of Spain is <em>empty</em>.</p>
+      </div>
+      <figure class="chart-figure reveal">
+        <div class="figure-kicker" data-i18n="s3Kicker">Share of land in populated 1 km cells</div>
+        <div id="occupied-ranking" class="ranking-chart" role="img"></div>
+      </figure>
+    </section>
+
+    <section class="chapter resident-section" id="resident">
+      <div class="chapter-number">04</div>
+      <div class="chapter-copy reveal">
+        <p class="eyebrow" data-i18n="s4Eyebrow">The resident’s viewpoint</p>
+        <h2 data-i18n-html="s4Title">Average density = <span id="average-copy">—</span>.<br>Median resident’s cell density = <span id="median-copy">—</span>.</h2>
+        <p data-i18n="s4Body">From the resident’s viewpoint, Spain becomes the densest country in the comparison. The contrast separates density measured across the land from the density where people actually live.</p>
+      </div>
+      <figure class="chart-figure reveal">
+        <div class="figure-kicker" data-i18n="s4Kicker">Country average → population-weighted median 1 km density</div>
+        <div id="resident-dumbbell" class="dumbbell-chart" role="img"></div>
+        <figcaption data-i18n="s4Caption">The median is the grid-cell population of the middle resident after cells are weighted by their populations. The scale is logarithmic.</figcaption>
+      </figure>
+    </section>
+
+    <section class="chapter concentration-section" id="concentration">
+      <div class="chapter-number">05</div>
+      <div class="chapter-copy reveal">
+        <p class="eyebrow" data-i18n="s5Eyebrow">So little land?</p>
+        <h2 data-i18n-html="s5Title">Half of Spain’s population fits into <span id="half-copy">—</span> of its land.</h2>
+        <p data-i18n-html="s5Body">Even 90% of the population lives in just <strong id="ninety-copy">—</strong> of the total territory—the smallest share in the comparison.</p>
+      </div>
+      <figure class="chart-figure land-grid-figure reveal">
+        <div class="figure-kicker" data-i18n="s5Kicker">How much land contains the selected share of residents?</div>
+        <div class="land-grid-controls">
+          <label><span data-i18n="countryLabel">Country</span><select id="land-country"></select></label>
+          <label class="population-control"><span data-i18n="populationLabel">Population</span><input id="population-target" type="range" min="10" max="100" step="10" value="50"><output id="population-target-output" for="population-target">50%</output></label>
+        </div>
+        <div id="land-grid" class="land-grid" role="img"></div>
+        <p id="land-grid-text" class="dynamic-chart-text" aria-live="polite"></p>
+        <figcaption data-i18n="s5Caption">Each square represents 0.25% of national land. Cells are filled from the densest areas first; a partly filled square shows the remaining fraction.</figcaption>
+      </figure>
+    </section>
+
+    <section class="distribution-section dark-section" id="distribution">
+      <div class="distribution-copy reveal">
+        <p class="chapter-number">06</p>
+        <p class="eyebrow" data-i18n="s6Eyebrow">One population, many densities</p>
+        <h2 data-i18n="s6Title">Where does each country’s population sit on the density scale?</h2>
+        <p data-i18n="s6Body">These distributions show the share—or number—of residents living in each 1,000-person density band. Compare the focus countries, then open the view to all 30.</p>
+      </div>
+      <figure class="distribution-figure reveal">
+        <div class="distribution-controls">
+          <fieldset><legend data-i18n="yAxisLabel">Y axis</legend><button type="button" data-mode="share" aria-pressed="true" data-i18n="shareMode">Population share</button><button type="button" data-mode="absolute" aria-pressed="false" data-i18n="absoluteMode">People</button></fieldset>
+          <fieldset><legend data-i18n="countriesLabel">Countries</legend><button type="button" data-scope="focus" aria-pressed="true" data-i18n="focusMode">Focus countries</button><button type="button" data-scope="all" aria-pressed="false" data-i18n="allMode">All 30</button></fieldset>
+        </div>
+        <div id="density-distribution" class="distribution-chart" role="img"></div>
+        <figcaption data-i18n="s6Caption">Grid cells are grouped into 1,000-person bands; the final band contains cells with 20,000 or more residents. Hover, focus or tap a line to inspect a country.</figcaption>
+      </figure>
+    </section>
+
+    <section class="spain-section" id="spain">
+      <div class="spain-copy reveal">
+        <p class="chapter-number">07</p>
+        <p class="eyebrow" data-i18n="s7Eyebrow">Center, periphery and void</p>
+        <h2 data-i18n="s7Title">Sparse territory. Concentrated settlement.</h2>
+        <p data-i18n="s7Body">Madrid forms a dense island in the centre. Barcelona and Valencia extend the Mediterranean chain; concentrations also trace the Basque and Cantabrian north, Galicia and Andalusia. Between them lies a broad, lightly populated interior.</p>
+      </div>
+      <figure class="spain-map reveal">
+        <picture>
+          <source type="image/webp" srcset="assets/spain-density-960.webp 960w, assets/spain-density-1600.webp 1600w, assets/spain-density-2400.webp 2400w">
+          <img src="assets/spain-density-1600.png" srcset="assets/spain-density-960.png 960w, assets/spain-density-1600.png 1600w, assets/spain-density-2400.png 2400w" sizes="100vw" width="1600" height="1120" loading="lazy" alt="One-kilometre population grid of Spain, including a Canary Islands inset, showing dense cells around Madrid, Barcelona, Valencia, the north coast, Galicia and Andalusia and sparse cells across much of the interior.">
+        </picture>
+        <div class="map-legend compact"><strong data-i18n="legendTitle">Population per 1-km cell</strong><span><i style="--c:#ddd8cc"></i>0</span><span><i style="--c:#a9bea7"></i>10–99</span><span><i style="--c:#315f55"></i><b data-i18n="legend1000">1,000–4,999</b></span><span><i style="--c:#ef5b49"></i><b data-i18n="legend5000">5,000+</b></span></div>
+        <figcaption data-i18n="s7Caption">Each colour represents the published usual-resident population in a nominal 1 km square.</figcaption>
+      </figure>
+    </section>
+
+    <section class="takeaway">
+      <p class="eyebrow" data-i18n="takeEyebrow">The useful distinction</p>
+      <h2 data-i18n="takeTitle">Spain has a low density of people across land—and a high density of people around other people.</h2>
+    </section>
+
+    <section class="methods" id="methods">
+      <div><p class="eyebrow" data-i18n="methodsEyebrow">Method & limits</p></div>
+      <div class="methods-copy">
+        <p data-i18n-html="method1"><strong>Source.</strong> Eurostat/GISCO Census Grid 2021 V3.0, released 30 May 2026. The analysis uses final data reported by 30 EU and EFTA countries in ETRS89-LAEA (EPSG:3035).</p>
+        <p data-i18n-html="method2"><strong>Borders and coasts.</strong> Country-specific source files assign each country’s population and land contribution to shared cells. Reported LAND_SURFACE, rather than full-cell counts, defines national territory.</p>
+        <p data-i18n-html="method3"><strong>Confidentiality.</strong> Values marked confidential or unavailable are never changed to zero. Geometryless unallocated population is reported in QA and excluded from spatial distributions.</p>
+        <p data-i18n-html="method4"><strong>Interpretation.</strong> Cell population is used as nominal 1 km density. This measures residential concentration, not built form, dwelling crowding, daytime population or the area people physically use.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="source-block"><span data-i18n="sources">Sources</span><a href="https://ec.europa.eu/eurostat/web/gisco/geodata/population-distribution/population-grids">Eurostat/GISCO Census Grid 2021</a><a href="https://ec.europa.eu/eurostat/web/gisco/geodata/administrative-units/countries">GISCO country boundaries</a></div>
+    <p data-i18n="copyright">Source: Eurostat/GISCO. Analysis, modifications and cartography by Daniel Almazán. Copyright European Union 2026; reused under CC BY 4.0.</p>
+    <a class="footer-home" href="https://danielalmazan.com/" data-i18n="backHome">danielalmazan.com</a>
+  </footer>
+</body>
+</html>

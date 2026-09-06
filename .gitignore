@@ -1,0 +1,6 @@
+data/raw/
+data/interim/
+.Rhistory
+.DS_Store
+site/.DS_Store
+

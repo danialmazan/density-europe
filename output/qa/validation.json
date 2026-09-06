@@ -1,0 +1,133 @@
+{
+  "generated": "2026-09-06T18:17:09+0200",
+  "passed": 25,
+  "total": 25,
+  "success": true,
+  "checks": [
+    {
+      "name": "country inventory",
+      "passed": true,
+      "detail": "30 expected EU/EFTA country files"
+    },
+    {
+      "name": "coverage inventory",
+      "passed": true,
+      "detail": "coverage table matches configured countries"
+    },
+    {
+      "name": "threshold inventory",
+      "passed": true,
+      "detail": "one row per country and threshold"
+    },
+    {
+      "name": "density-band inventory",
+      "passed": true,
+      "detail": "21 complete density bands for each country"
+    },
+    {
+      "name": "density-band conservation",
+      "passed": true,
+      "detail": "population shares sum to one by country"
+    },
+    {
+      "name": "published population values",
+      "passed": true,
+      "detail": "no missing national T values in spatial cells"
+    },
+    {
+      "name": "unallocated disclosure",
+      "passed": true,
+      "detail": "minimum allocated share 98.856%"
+    },
+    {
+      "name": "Spain conventional-density claim",
+      "passed": true,
+      "detail": "rank 12 of 30 from lowest density"
+    },
+    {
+      "name": "Spain populated-land claim",
+      "passed": true,
+      "detail": "third-smallest populated-land share"
+    },
+    {
+      "name": "Spain resident-median claim",
+      "passed": true,
+      "detail": "highest population-weighted median"
+    },
+    {
+      "name": "Spain 90-percent claim",
+      "passed": true,
+      "detail": "smallest land share for 90% of residents"
+    },
+    {
+      "name": "Spain allocation",
+      "passed": true,
+      "detail": "100.0000% allocated"
+    },
+    {
+      "name": "responsive maps",
+      "passed": true,
+      "detail": "12 non-empty PNG/WebP assets"
+    },
+    {
+      "name": "document language",
+      "passed": true,
+      "detail": "English is the clean-URL default"
+    },
+    {
+      "name": "canonical URL",
+      "passed": true,
+      "detail": "canonical is configured"
+    },
+    {
+      "name": "image alternatives",
+      "passed": true,
+      "detail": "all story images have alt text"
+    },
+    {
+      "name": "language controls",
+      "passed": true,
+      "detail": "EN/ES controls present"
+    },
+    {
+      "name": "map legend labels",
+      "passed": true,
+      "detail": "both map legends identify the measurement"
+    },
+    {
+      "name": "portfolio return link",
+      "passed": true,
+      "detail": "footer links to danielalmazan.com"
+    },
+    {
+      "name": "Spanish route behavior",
+      "passed": true,
+      "detail": "?lang=es is preserved in the URL"
+    },
+    {
+      "name": "Spanish copy",
+      "passed": true,
+      "detail": "Spanish title and article copy embedded"
+    },
+    {
+      "name": "focus-country set",
+      "passed": true,
+      "detail": "Greece replaces Finland, Sweden and Belgium"
+    },
+    {
+      "name": "web-data inventory",
+      "passed": true,
+      "detail": "30 countries embedded in site/data.js"
+    },
+    {
+      "name": "web density bands",
+      "passed": true,
+      "detail": "density distributions embedded for all 30 countries"
+    },
+    {
+      "name": "web-data provenance",
+      "passed": true,
+      "detail": "source version embedded"
+    }
+  ]
+}
