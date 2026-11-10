@@ -171,6 +171,20 @@
     <p data-i18n="copyright">Source: Eurostat/GISCO. Analysis, modifications and cartography by Daniel Almazán. Copyright European Union 2026; reused under CC BY 4.0.</p>
     <a class="footer-home" href="https://danielalmazan.com/" data-i18n="backHome">danielalmazan.com</a>
   </footer>
-<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7e557ad432574707b8ba15bdd75c688e"}'></script><!-- End Cloudflare Web Analytics -->
+<!-- Cloudflare Web Analytics -->
+<script id="cf-analytics-loader">
+(() => {
+  try {
+    if (localStorage.getItem("exclude_cf_analytics") === "1") return;
+  } catch { /* Storage unavailable: retain normal analytics. */ }
+  if (document.querySelector('script[src^="https://static.cloudflareinsights.com/beacon.min.js"]')) return;
+  const beacon = document.createElement("script");
+  beacon.type = "module";
+  beacon.src = "https://static.cloudflareinsights.com/beacon.min.js";
+  beacon.setAttribute("data-cf-beacon", '{"token": "7e557ad432574707b8ba15bdd75c688e"}');
+  document.body.appendChild(beacon);
+})();
+</script>
+<!-- End Cloudflare Web Analytics -->
 </body>
 </html>
